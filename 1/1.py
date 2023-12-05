@@ -1,3 +1,5 @@
+import time
+start_time = time.time()
 with open('input.txt', 'r') as infile:
     lines = [line.strip() for line in infile]
 print(lines)
@@ -7,3 +9,6 @@ for line in lines:
     result += int(strnum)
 
 print(result)
+end_time = time.time()
+elapsed_time = end_time - start_time
+print(f"Elapsed time: {elapsed_time} seconds")
