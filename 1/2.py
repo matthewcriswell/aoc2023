@@ -40,5 +40,5 @@ for line in lines:
 
 print(result)
 end_time = time.time()
-elapsed_time = end_time - start_time
-print(f"Elapsed time: {elapsed_time} seconds")
+elapsed_time = (end_time - start_time) * 1000
+print(f"Elapsed time: {elapsed_time} ms")
